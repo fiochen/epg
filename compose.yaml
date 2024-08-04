@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    ports: 
+      - 12280:80
+    volumes:
+      - ./dev_db.sqlite3:/app/db.sqlite3
+      - ./download:/app/download
